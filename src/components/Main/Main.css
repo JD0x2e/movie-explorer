@@ -1,0 +1,39 @@
+.main {
+  padding: 1rem;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form button {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.form input {
+  padding: 0.5rem;
+}
+
+.movie-title {
+}
+
+.movie-plot {
+}
+
+.movie-actors {
+  font-style: italic;
+}
+
+.movie-poster {
+}
