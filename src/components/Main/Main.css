@@ -10,6 +10,14 @@
   align-items: center;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  color: red;
+}
+
 .form {
   display: flex;
   justify-content: center;
