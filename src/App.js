@@ -21,6 +21,8 @@ export default function App() {
     const API = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&t=${form.title}`;
     const res = await axios.get(API);
 
+    console.log(res.data);
+
     if (res.data.Error !== "Movie not found!") {
       const tempMovies = [...movies];
       tempMovies.unshift(res.data);
