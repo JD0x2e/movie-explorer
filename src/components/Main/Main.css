@@ -1,11 +1,17 @@
 .main {
   padding: 1rem;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
-.movie {
+.review {
+  color: white;
+  border: 5px double black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.review-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -18,51 +24,33 @@
   color: red;
 }
 
-.form {
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-plot-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-}
-
-.form:hover {
-  transform: scale(1.03);
-}
-
-.form button {
-  margin-left: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.562);
-  color: white;
-  border-radius: 10px;
-}
-
-.form input {
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.562);
-  color: white;
-  border-radius: 10px;
-}
-
-.form button:hover {
-  background-color: white;
-  color: black;
-}
-
-.form input:hover {
-  background-color: white;
-  color: black;
-}
-
-/* .movie-title {
-}
-
-.movie-plot {
+  width: 50%;
+  text-align: center;
 }
 
 .movie-poster {
-} */
+  margin-top: 1em;
+}
 
 .movie-actors {
   font-style: italic;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie-title {
+  text-decoration: underline;
 }

@@ -11,6 +11,7 @@ export default function App() {
   const [form, setForm] = useState({
     title: "",
   });
+  const [review, setReview] = useState("");
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -33,6 +34,13 @@ export default function App() {
       }
       setShowError(false);
       setMovies(tempMovies);
+
+      // check if movie is in favourites
+      const API2 = `http://localhost:8080/favourites?title=${res.data.Title}`;
+      const res2 = await axios.get(API2);
+
+      setReview(res2.data.Review);
+      console.log(res2.data.Review);
     } else {
       // handle error
       setShowError(true);
@@ -41,8 +49,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Main getMovie={getMovie} handleChange={handleChange} movies={movies} showError={showError} />
+      <Header getMovie={getMovie} handleChange={handleChange} />
+      <Main getMovie={getMovie} handleChange={handleChange} movies={movies} showError={showError} review={review} />
       <Footer />
     </div>
   );

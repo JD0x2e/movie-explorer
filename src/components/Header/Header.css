@@ -1,6 +1,57 @@
 .header {
   display: flex;
+  justify-content: space-around;
+}
+
+.header-h1 {
+  color: rgb(175, 0, 0);
+}
+
+.form {
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: underline;
+  padding: 1rem;
+}
+
+.form button {
+  margin-left: 1rem;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.562);
+  color: white;
+  border: 3px solid rgb(175, 0, 0);
+  border-radius: 10px;
+}
+
+.form input {
+  background-color: rgba(0, 0, 0, 0.562);
+  color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 3px solid rgb(175, 0, 0);
+}
+
+.form button:hover {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+  border: 3px solid rgb(175, 0, 0);
+  cursor: pointer;
+}
+
+.form input:hover {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+  border: 3px solid rgb(175, 0, 0);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

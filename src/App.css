@@ -1,8 +1,8 @@
 * {
-  font-family: monospace;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 html {
-  background: rgb(61, 90, 126);
-  background: linear-gradient(45deg, rgba(61, 90, 126, 1) 0%, rgba(39, 221, 223, 1) 83%);
+  background: linear-gradient(1deg, rgb(31 2 2) 0%, rgba(41, 0, 64, 1) 50%);
+  color: whitesmoke;
 }
