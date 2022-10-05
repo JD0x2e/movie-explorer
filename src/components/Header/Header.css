@@ -54,4 +54,7 @@
     justify-content: space-around;
     align-items: center;
   }
+  .movie-plot-container {
+    width: 80%;
+  }
 }
