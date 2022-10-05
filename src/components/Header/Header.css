@@ -17,9 +17,10 @@
 .form button {
   margin-left: 1rem;
   padding: 0.5em;
-  background-color: rgba(0, 0, 0, 0.562);
-  color: white;
+  background-color: rgb(175, 0, 0);
   border: 3px solid rgb(175, 0, 0);
+  color: white;
+  font-size: large;
   border-radius: 10px;
 }
 
@@ -33,7 +34,7 @@
 
 .form button:hover {
   background-color: white;
-  color: black;
+  color: rgb(175, 0, 0);
   padding: 0.5em;
   border: 3px solid rgb(175, 0, 0);
   cursor: pointer;
@@ -41,7 +42,7 @@
 
 .form input:hover {
   background-color: white;
-  color: black;
+  color: rgb(175, 0, 0);
   padding: 0.5em;
   border: 3px solid rgb(175, 0, 0);
   cursor: pointer;
