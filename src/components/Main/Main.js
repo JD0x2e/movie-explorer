@@ -8,9 +8,7 @@ export default function Main({ getMovie, movies, handleChange, showError, review
         <input name="title" placeholder={"Title of movie/show"} onChange={handleChange} />
         <button type="submit">Explore!</button>
       </form> */}
-      <div className="review-container">
-        {review && <h3 className="review">This is a favourite movie of mine too! 😊</h3>}
-      </div>
+      <div className="review-container">{review && <p className="review">This is a favourite movie of mine too! 😊</p>}</div>
       {showError && <h3 className="error">That is not a valid movie title!</h3>}
       {movies.map((movie, index) => {
         return (
